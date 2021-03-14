@@ -169,13 +169,13 @@ int main(){
     cekStock(toko, jumlahBarang); // cek stock barang
     
     // print semua barang dengan harga termurah
-    printf("\nHarga Barang Termurah: \n");
+    printf("\nHarga Barang Termurah:\n");
     for(i=0;i<jumlahBarang;i++){
         if(toko[i].harga == hargaTerendah){
             printf("\n");
-            printf("Kategori\t\t: %s", toko[i].jenis);
+            printf("Kategori\t: %s", toko[i].jenis);
             printf("Sub-Kategori\t: %s", toko[i].nama);
-            printf("Stok Barang\t\t: %d\n", toko[i].stok);
+            printf("Stok Barang\t: %d\n", toko[i].stok);
             printf("Diskon Barang\t: %d\n", toko[i].diskon);
             printf("Harga Barang\t: %d\n", toko[i].harga);
         }
