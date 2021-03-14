@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "01",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "TokoA.txt",
+      "output": "Butuh restock: Jeans\r\nSetidaknya pesan 67 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Aksesoris\r\nSub-Kategori    : Kalung\r\nStok Barang     : 51\r\nDiskon Barang   : 10\r\nHarga Barang    : 22500",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "02",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "TokoB.txt",
+      "output": "Butuh restock: Kaos\r\nSetidaknya pesan 127 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Cincin\r\nSetidaknya pesan 29 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Topi\r\nSetidaknya pesan 38 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Tank Top\r\nSetidaknya pesan 96 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Sepatu\r\nSub-Kategori    : Sendal\r\nStok Barang     : 800\r\nDiskon Barang   : 70\r\nHarga Barang    : 4500",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "03",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "TokoC.txt",
+      "output": "Semua persediaan barang masih banyak! Tidak perlu restock!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Sepatu\r\nSub-Kategori    : Sendal\r\nStok Barang     : 60\r\nDiskon Barang   : 0\r\nHarga Barang    : 10000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "04",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "TokoD.txt",
+      "output": "Semua persediaan barang masih banyak! Tidak perlu restock!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Sepatu\r\nSub-Kategori    : Sendal\r\nStok Barang     : 120\r\nDiskon Barang   : 0\r\nHarga Barang    : 10000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "05",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "TokoE.txt",
+      "output": "Butuh restock: Kaos\r\nSetidaknya pesan 76 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Jogger\r\nSetidaknya pesan 51 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Topi\r\nSetidaknya pesan 26 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Sendal\r\nSetidaknya pesan 116 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Sepatu\r\nSub-Kategori    : Sendal\r\nStok Barang     : 59\r\nDiskon Barang   : 0\r\nHarga Barang    : 10000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "06",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "TokoF.txt",
+      "output": "Semua persediaan barang masih banyak! Tidak perlu restock!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Aksesoris\r\nSub-Kategori    : Topi\r\nStok Barang     : 51\r\nDiskon Barang   : 10\r\nHarga Barang    : 31500\r\n\r\nKategori        : Sepatu\r\nSub-Kategori    : Sneakers\r\nStok Barang     : 121\r\nDiskon Barang   : 70\r\nHarga Barang    : 31500",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "07",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "TokoG.txt",
+      "output": "Butuh restock: Jogger\r\nSetidaknya pesan 99 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Jeans\r\nSetidaknya pesan 99 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Gelang\r\nSetidaknya pesan 49 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Syal\r\nSetidaknya pesan 49 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Aksesoris\r\nSub-Kategori    : Gelang\r\nStok Barang     : 1\r\nDiskon Barang   : 0\r\nHarga Barang    : 19000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "08",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "TokoH.txt",
+      "output": "Semua persediaan barang masih banyak! Tidak perlu restock!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Celana\r\nSub-Kategori    : Kulot\r\nStok Barang     : 101\r\nDiskon Barang   : 50\r\nHarga Barang    : 35000\r\n\r\nKategori        : Sepatu\r\nSub-Kategori    : Sneakers\r\nStok Barang     : 174\r\nDiskon Barang   : 70\r\nHarga Barang    : 35000\r\n\r\nKategori        : Celana\r\nSub-Kategori    : Jeans\r\nStok Barang     : 683\r\nDiskon Barang   : 50\r\nHarga Barang    : 35000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "09",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "TokoI.txt",
+      "output": "Butuh restock: Jaket\r\nSetidaknya pesan 86 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Topi\r\nSetidaknya pesan 27 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Skinny\r\nSetidaknya pesan 90 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nButuh restock: Flat\r\nSetidaknya pesan 165 barang lagi untuk mencapai batas persediaan minimal!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Aksesoris\r\nSub-Kategori    : Syal\r\nStok Barang     : 292\r\nDiskon Barang   : 10\r\nHarga Barang    : 26100",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "TokoJ.txt",
+      "output": "Semua persediaan barang masih banyak! Tidak perlu restock!\r\n\r\nHarga Barang Termurah:\r\n\r\nKategori        : Aksesoris\r\nSub-Kategori    : Kalung\r\nStok Barang     : 49\r\nDiskon Barang   : 0\r\nHarga Barang    : 30000\r\n\r\nKategori        : Celana\r\nSub-Kategori    : Kulot\r\nStok Barang     : 101\r\nDiskon Barang   : 50\r\nHarga Barang    : 30000\r\n\r\nKategori        : Sepatu\r\nSub-Kategori    : Sneakers\r\nStok Barang     : 174\r\nDiskon Barang   : 70\r\nHarga Barang    : 30000",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
