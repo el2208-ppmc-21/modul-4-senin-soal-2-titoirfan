@@ -19,7 +19,7 @@ typedef struct{
     int diskon;
 } Barang;
 
-void inputBarang(Barang *toko, int *sumBarang){
+Barang* inputBarang(Barang *toko, int *sumBarang){
     char filename[20];
     char temp[100];
     int jumlahBarang;
@@ -51,12 +51,12 @@ void inputBarang(Barang *toko, int *sumBarang){
 
     fclose(fp);
 
-    return;
+    return toko;
 }
 
 void hitungDiskon(Barang *toko, int jumlahBarang){
     int i;
-
+    
     // menghitung diskon sesuai ketentuan persediaan setiap barang
     for(i = 0; i < jumlahBarang; i++){
         if(strstr(toko[i].jenis,"Baju") != 0){
@@ -85,8 +85,6 @@ void hitungDiskon(Barang *toko, int jumlahBarang){
             }
         }
     }
-
-    return;
 }
 
 void hargaDiskonTerendah(Barang *toko, int jumlahBarang, int *hargaTerendah){
@@ -111,8 +109,6 @@ void hargaDiskonTerendah(Barang *toko, int jumlahBarang, int *hargaTerendah){
 
     // mengembalikan indeks barang dengan harga termurah
     *hargaTerendah = toko[nomor].harga;
-
-    return;
 }
 
 void cekStock(Barang *toko, int jumlahBarang){
@@ -151,8 +147,6 @@ void cekStock(Barang *toko, int jumlahBarang){
     if (cek == 0){
         printf("Semua persediaan barang masih banyak! Tidak perlu restock!\n");
     }
-
-    return;
 }
 
 int main(){
@@ -161,9 +155,9 @@ int main(){
     int hargaTerendah;
     int i;
 
-    toko = (Barang*)calloc(1,sizeof(Barang));
+    toko = (Barang*) malloc(sizeof(Barang));
 
-    inputBarang(toko, &jumlahBarang);
+    toko = inputBarang(toko, &jumlahBarang);
 
 
     hitungDiskon(toko, jumlahBarang);
@@ -187,6 +181,6 @@ int main(){
         }
     }
 
-    //free(toko);
+    free(toko);
     return 0;
 }
