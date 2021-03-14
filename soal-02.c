@@ -161,7 +161,7 @@ int main(){
     int hargaTerendah;
     int i;
 
-    toko = (Barang*)calloc(jumlahBarang,sizeof(Barang));
+    toko = (Barang*)calloc(1,sizeof(Barang));
 
     inputBarang(toko, &jumlahBarang);
 
@@ -187,6 +187,6 @@ int main(){
         }
     }
 
-    free(toko);
+    //free(toko);
     return 0;
 }
