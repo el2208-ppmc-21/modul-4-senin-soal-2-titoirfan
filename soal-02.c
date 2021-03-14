@@ -173,11 +173,11 @@ int main(){
     for(i=0;i<jumlahBarang;i++){
         if(toko[i].harga == hargaTerendah){
             printf("\n");
-            printf("Kategori\t: %s", toko[i].jenis);
-            printf("Sub-Kategori\t: %s", toko[i].nama);
-            printf("Stok Barang\t: %d\n", toko[i].stok);
-            printf("Diskon Barang\t: %d\n", toko[i].diskon);
-            printf("Harga Barang\t: %d\n", toko[i].harga);
+            printf("Kategori        : %s", toko[i].jenis);
+            printf("Sub-Kategori    : %s", toko[i].nama);
+            printf("Stok Barang     : %d\n", toko[i].stok);
+            printf("Diskon Barang   : %d\n", toko[i].diskon);
+            printf("Harga Barang    : %d\n", toko[i].harga);
         }
     }
 
